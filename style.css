@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+.container {
+  width: 1130px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.header {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+
+.today_date {
+  border: 3px solid #219653;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 270px;
+}
+
+.month_container {
+  display: flex;
+  align-items: center;
+  width: 230px;
+  justify-content: space-around;
+}
+
+.prev_btn {
+  width: 10px;
+  height: 21px;
+  background-image: url(img/prev_b.svg);
+  cursor: pointer;
+}
+
+
+.next_btn {
+  width: 11px;
+  height: 21px;
+  background-image: url(img/next_b.svg);
+  cursor: pointer;
+}
+
+.current_month {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+
+.weekdays {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  font-size: 18px;
+  color: #219653;
+  margin-bottom: 20px;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 1px solid rgb(185, 184, 184);
+  border-left: 1px solid rgb(185, 184, 184);
+  margin-bottom: 60px;
+}
+
+.day {
+  font-weight: 500;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 100px;
+  border-right: 1px solid rgb(185, 184, 184);
+  border-bottom: 1px solid rgb(185, 184, 184);
+}
+
+.day:hover {
+  background-color: #e8faed;
+}
+
+
+.padding {
+  background-color: #FFFCFF !important;
+}
+
+
+#newEventModal {
+  text-align: center;
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 150px;
+  left: calc(50% - 160px);
+  position: absolute;
+}
+
+.newEventModal_h2 {
+  margin-bottom: 20px;
+  color: #219653;
+  font-family: 'Roboto',
+    sans-serif;
+  font-weight: 700;
+}
+
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px rgb(128, 128, 128);
+  margin-bottom: 30px;
+}
+
+#eventTitleInput.error {
+  border: 2px solid rgb(215 158 158);
+}
+
+#cancelButton,
+#saveButton {
+  width: 70px;
+  height: 35px;
+  margin: 0 20px;
+  border: none;
+  background-color: #219653;
+  color: white;
+  font-family: 'Roboto',
+    sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+#modalBack {
+  display: none;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.event_div {
+  margin-top: 10px;
+  max-width: 135px;
+  background-color: #219653;
+  font-family: 'Roboto',
+    sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 15px;
+  padding: 3px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+
+#deleteEventModal {
+  text-align: center;
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 150px;
+  left: calc(50% - 160px);
+  position: absolute;
+}
+
+
+#deleteButton,
+#closeButton {
+  width: 70px;
+  height: 35px;
+  margin: 0 20px;
+  border: none;
+  background-color: #219653;
+  color: white;
+  font-family: 'Roboto',
+    sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+.deleteEventModal_h2 {
+  margin-bottom: 20px;
+  color: #219653;
+  font-family: 'Roboto',
+    sans-serif;
+  font-weight: 700;
+}
+
+
+#eventText {
+  margin-bottom: 15px;
+}

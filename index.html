@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <div class="today_date">суббота, 01.01.2022 г.</div>
+      <div class="month_container">
+        <div class="prev_btn"></div>
+        <div class="current_month"></div>
+        <div class="next_btn"></div>
+      </div>
+    </div>
+
+    <div class="weekdays">
+      <div>Пн</div>
+      <div>Вт</div>
+      <div>Ср</div>
+      <div>Чт</div>
+      <div>Пт</div>
+      <div>Сб</div>
+      <div>Вс</div>
+    </div>
+
+    <div id="calendar">
+
+    </div>
+  </div>
+
+
+  <div id="newEventModal">
+    <h2 class="newEventModal_h2">New Event</h2>
+
+    <input id="eventTitleInput" placeholder="Event Title" />
+
+    <button id="saveButton">Save</button>
+    <button id="cancelButton">Cancel</button>
+  </div>
+
+  <div id="deleteEventModal">
+    <h2 class="deleteEventModal_h2">Event</h2>
+
+    <p id="eventText"></p>
+
+    <button id="deleteButton">Delete</button>
+    <button id="closeButton">Close</button>
+  </div>
+
+
+  <div id="modalBack">
+  </div>
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
